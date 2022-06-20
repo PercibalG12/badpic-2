@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinds/Models gallery</title>
+    <link rel="stylesheet" href="css/model.css">
+    <link rel="shortcut icon" href="images/woman.jpg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" ></script>
+</head>
+<body>
+    
+
+<div id="gallery-2" class="oxy-gallery oxy-gallery-masonry">
+    
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+<div class="oxy-gallery-item">
+    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
+</div>
+
+</div>
+
+<script>
+
+const imgzoom2 = document.querySelectorAll("#gallery2 .oxy-gallery-item");
+
+imgzoom2.forEach((element) => {
+	const contents = element.querySelectorAll(".oxy-gallery-item-contents") 
+
+    gsap.set(contents, { scale:0 });
+  
+    gsap.to(contents, {
+        duration: 1.2,
+        autoAlpha:1,
+        scale: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: element,
+            start: "top bottom-=100",
+            end: "bottom top+=100",
+            toggleActions: "play reverse play reverse"
+        }
+    });
+})
+
+</script>
+
+</body>
+</html>
+
