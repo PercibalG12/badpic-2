@@ -5,93 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hinds/Models gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"/>
     <link rel="stylesheet" href="css/model.css">
     <link rel="shortcut icon" href="images/woman.jpg" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" ></script>
-</head>
+    </head>
 <body>
     
 
-<div id="gallery-2" class="oxy-gallery oxy-gallery-masonry">
-    
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+    <div class="fixed">
+        <h1>Demario Hinds</h1>
+    </div>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+    <div class="container">
+        <ul class="section one">
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+         <li class="imgsec">
+            <img src="images/1.jpg" class="img" id="pic01"></img>
+            <h1>Glitch</h1>
+            <h1>Glitch</h1>
+         </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+         <li class="imgsec">
+            <img src="images/1.jpg" class="img" id="pic02"></img>
+            <h1>Glitch</h1>
+            <h1>Glitch</h1>
+         </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+         <li class="imgsec">
+            <img src="images/1.jpg" class="img" id="pic03"></img>
+            <h1>Glitch</h1>
+            <h1>Glitch</h1>
+         </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+         <li class="imgsec">
+            <img src="images/1.jpg" class="img" id="pic04"></img>
+            <h1>Glitch</h1>
+            <h1>Glitch</h1>
+         </li>
+        </ul>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+        <ul class="section two">
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+            <li class="imgsec">
+                <img src="images/1.jpg" class="img" id="pic05"></img>
+                <h1>Glitch</h1>
+                <h1>Glitch</h1>
+             </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+             <li class="imgsec">
+                <img src="images/1.jpg" class="img" id="pic06"></img>
+                <h1>Glitch</h1>
+                <h1>Glitch</h1>
+             </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+             <li class="imgsec">
+                <img src="images/1.jpg" class="img" id="pic07"></img>
+                <h1>Glitch</h1>
+                <h1>Glitch</h1>
+             </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+             <li class="imgsec">
+                <img src="images/1.jpg" class="img" id="pic08"></img>
+                <h1>Glitch</h1>
+                <h1>Glitch</h1>
+             </li>
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
+            
 
-<div class="oxy-gallery-item">
-    <figure class="oxy-gallery-item-contents"> <img src="images/1.jpg" > </figure>
-</div>
-
-</div>
-
-<script>
-
-const imgzoom2 = document.querySelectorAll("#gallery2 .oxy-gallery-item");
-
-imgzoom2.forEach((element) => {
-	const contents = element.querySelectorAll(".oxy-gallery-item-contents") 
-
-    gsap.set(contents, { scale:0 });
-  
-    gsap.to(contents, {
-        duration: 1.2,
-        autoAlpha:1,
-        scale: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: element,
-            start: "top bottom-=100",
-            end: "bottom top+=100",
-            toggleActions: "play reverse play reverse"
-        }
-    });
-})
-
-</script>
+        </ul>
+    </div>
 
 </body>
 </html>

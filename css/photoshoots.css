@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    background: #ccffff;
+    font-family: "Monument, Extended";
+    color: #000;
+  }
+  
+  body ul li {
+    list-style: none;
+    margin-bottom: 150px;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 70px;
+    color: #000;
+    text-align: center;
+  }
+  .fixed h1 {
+    line-height: 50%;
+    font-weight: 400;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+  .container .section {
+    text-align: center;
+  }
+  .container .one {
+    margin-top: 200px;
+  }
+  .container .one .imgsec:nth-child(odd) .img {
+    transform: rotate(10deg);
+  }
+  .container .one .imgsec:nth-child(even) .img {
+    transform: rotate(-10deg);
+  }
+  .container .two {
+    display: grid;
+    place-content: center;
+    margin-top: -100px;
+  }
+  .container .two .imgsec:nth-child(odd) .img {
+    transform: rotate(-10deg);
+  }
+  .container .two .imgsec:nth-child(even) .img {
+    transform: rotate(10deg);
+  }
+  
+  .imgsec {
+    position: relative;
+    width: 470px;
+    height: 350px;
+  }
+  .imgsec .img {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  .imgsec h1 {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-size: 80px;
+    -webkit-text-stroke: 5px #f8c210;
+    color: #000;
+  }
+  .imgsec h1:last-child {
+    bottom: 5px;
+    left: 17px;
+    color: #fff;
+    -webkit-text-stroke: 3px #000;
+  }
