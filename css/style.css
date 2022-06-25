@@ -315,12 +315,12 @@ transition: 1s ease;
   display: inline-block;
 }
 
-
+/* big tablet media query  */
 @media (max-width: 858px) {
 
   .checkbtn{
     display: block;
-    padding-left: 650px;
+    padding-left: 700px;
   }
   .categories ul{
     position: fixed;
@@ -363,10 +363,70 @@ transition: 1s ease;
 }
 
 
-
 .img-wrapper02 {
   display: none;
 
+}
+
+
+/* SOCIAL MEDIA
+=========================== */
+.media {
+  position: absolute;
+  top: 960px;
+  right: -110px;
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+.media ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 'Stoke', serif;
+}
+
+/* TEXT
+=========================== */
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  width: 1000px;
+}
+
+.text h1 {
+  padding-left: 30px;
+}
+.text h1 .hidetext {
+  position: absolute;
+}
+
+.text p {
+ padding-left: 40px;
+}
+ /* Article section */
+
+ /* #mystory{
+
+ } */
+
+#mystory .all-items{
+ padding-left: 100px;
+
+}
+/* galley section  */
+#home1{
+  width: 120%;
+  /* margin: -400px 0 5px */
+}
+
+#home1 ul{
+ margin: -400px 0 0px
 }
 
 
@@ -375,32 +435,14 @@ transition: 1s ease;
 /* my story  */
 
 #mystory {
-  padding: 10px 0;
-  /* background-image: url("images/wavesNegative.svg") no-repeat cover; */
-  /* background:linear-gradient(90deg, rgb(165, 180, 252), rgb(79, 70, 229)); */
-}
-
-/* svg clip wave thng affecting the header  */
-
-/* .custom-shape-divider-bottom-1655605765 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  padding-top: 60px ;
+  padding-bottom: 60px;
+  margin-bottom: -230px;
+   /* background:linear-gradient(90deg, rgb(165, 180, 252), rgb(79, 70, 229)); */
 }
 
-.custom-shape-divider-bottom-1655605765 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
 
-.custom-shape-divider-bottom-1655605765 .shape-fill {
-  fill: #FFFFFF;
-} */
 
 #mystory .container .section-heading{
   display: flex;
@@ -501,6 +543,9 @@ transition: 1s ease;
   width: 25px;
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
   #mystory .item {
     flex-direction: column;
@@ -542,10 +587,12 @@ transition: 1s ease;
 	place-items:center;
   background-color: black;
 	font-family: Cosi Azure;
+
 }
 
 #home1 ul {
 	width: 80%;
+ 
 }
 
 
