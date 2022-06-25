@@ -249,7 +249,6 @@ transition: 1s ease;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: lighter;
-
   position: relative;
   overflow: hidden;
   height: 50px;
@@ -579,10 +578,12 @@ transition: 1s ease;
 .content .image-box img{
   width: 100%;
 }
+
+
 .content .topic{
   font-size: 22px;
   font-weight: 500;
-  color: #ba24c2;
+  color: #c23c24;
 }
 .content form{
   width: 40%;
@@ -608,7 +609,7 @@ transition: 1s ease;
 }
 .content .input-box input:focus,
 .content .input-box input:valid{
-  border-color: #ba24c2;
+  border-color:#c23c24;
   background-color: #fff;
 }
 .content .input-box label{
@@ -627,7 +628,7 @@ transition: 1s ease;
   top: 0;
   left: 12px;
   display: 14px;
-  color: #ba24c2;
+  color: #c23c24;
   background: #fff;
 }
 .content .message-box{
@@ -647,7 +648,7 @@ transition: 1s ease;
   transition: all 0.3s ease;
 }
 .content .message-box textarea:focus{
-  border-color: #ba24c2;
+  border-color:#c23c24;
   background-color: #fff;
 }
 .content .message-box label{
@@ -662,13 +663,13 @@ transition: 1s ease;
 .content .message-box textarea:focus ~ label{
   left: 12px;
   top: -10px;
-  color: #ba24c2;
+  color: #c23c24;
   font-size: 14px;
   background: #fff;
 }
 .content .input-box input[type="submit"]{
   color: #fff;
-  background: #ba24c2;
+  background: #c23c24;
   padding-left: 0;
   font-size: 18px;
   font-weight: 500;
@@ -677,7 +678,7 @@ transition: 1s ease;
   transition: all 0.3s ease;
 }
 .content .input-box input[type="submit"]:hover{
-  background-color: #d43ddb;
+  background-color: #c23c24;
 }
 @media (max-width:1000px) {
   .content .image-box{
@@ -707,22 +708,26 @@ transition: 1s ease;
     padding-left: 700px;
   }
   .categories ul{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #000000;
     top: 80px;
-    left: -100%;
+    left: 100%;
     text-align: center;
     transition: all .5s;
+    z-index: 999;
   }
   .navbar ul li{
     display: block;
-    margin: 50px 0;
+    margin: 50px 0 ;
     line-height: 30px;
   }
   .navbar ul li a{
     font-size: 20px;
+  
   }
   a:hover,a.active{
     background: none;
@@ -756,11 +761,11 @@ transition: 1s ease;
 /* SOCIAL MEDIA
 =========================== */
 .media {
-  position: absolute;
   top: 960px;
   right: -110px;
   transform: rotate(-90deg);
-  z-index: 999;
+  z-index: none;
+ 
 }
 
 .media ul li {
@@ -775,7 +780,7 @@ transition: 1s ease;
 /* TEXT
 =========================== */
 .text {
-  position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -822,13 +827,165 @@ transition: 1s ease;
   /* padding-bottom: -160px; */
 
 }
+}
 
+/* small tablet view 
+============================================================================== */
+
+@media (max-width: 768px) {
+  .checkbtn{
+    display: block;
+    padding-left: 650px;
+}
+
+/* SOCIAL MEDIA
+=========================== */
+.media {
+  top: 810px;
+  right: -110px;
+  transform: rotate(-90deg);
+  z-index: none;
+ 
+}
+
+.media ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 'Stoke', serif;
+}
+}
+
+
+/* Phone view 
+=============================================================================== */
+@media (max-width:650){
+
+  .checkbtn{
+    display: block;
+    padding-left: 40px !important;
+    visibility: visible;
+  }
+  .categories ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 999;
+  }
+  .navbar ul li{
+    display: block;
+    margin: 50px 0 ;
+    line-height: 30px;
+  }
+  .navbar ul li a{
+    font-size: 20px;
+  
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+ .wrapper{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('../images/woman.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+
+ }
+
+ .img-wrapper01 {
+  display: none;
+}
+
+
+.img-wrapper02 {
+  display: none;
 
 }
 
-/* footer section start  */
 
+/* SOCIAL MEDIA
+=========================== */
+.media {
+  top: 960px;
+  right: -110px;
+  transform: rotate(-90deg);
+  z-index: none;
+ 
+}
 
+.media ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 'Stoke', serif;
+}
 
+/* TEXT
+=========================== */
+.text {
 
-/* footer section end  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  width: 1000px;
+}
+
+.text h1 {
+  padding-left: 30px;
+}
+.text h1 .hidetext {
+  position: absolute;
+}
+
+.text p {
+ padding-left: 40px;
+}
+ /* Article section */
+
+ /* #mystory{
+
+ } */
+
+#mystory .all-items{
+ padding-left: 100px;
+
+}
+/* galley section  */
+#home1{
+  width: 120%;
+  /* margin: -400px 0 5px */
+}
+
+#home1 ul{
+ margin: -400px 0 0px
+}
+
+/* contact section */
+.contact{
+  z-index: 12;
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px ;
+  /* padding-bottom: -160px; */
+
+}
+}
