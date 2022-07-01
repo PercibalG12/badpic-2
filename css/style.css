@@ -75,6 +75,7 @@ a{
   margin-right: 40px;
   cursor: pointer;
   display: none;
+
 }
 #check{
   display: none;
@@ -237,7 +238,6 @@ font-family: 'Playfair Display', serif;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   letter-spacing: 5px;
-
   position: relative;
   overflow: hidden;
   height: 150px;
@@ -672,6 +672,7 @@ font-family: 'Playfair Display', serif;
   outline: none;
   transition: all 0.3s ease;
   font-family: 'Playfair Display', serif;
+  padding-left: 16px;
 }
 .content .message-box textarea:focus{
   border-color:#c23c24;
@@ -732,7 +733,6 @@ font-family: 'Playfair Display', serif;
 
 /* big tablet media query */
 @media (max-width: 858px) {
-
   .checkbtn{
     display: block;
     padding-left: 700px;
@@ -748,8 +748,10 @@ font-family: 'Playfair Display', serif;
     left: 100%;
     text-align: center;
     transition: all .5s;
-    z-index: 999;
+   
   }
+
+
   .navbar ul li{
     display: block;
     margin: 50px 0 ;
