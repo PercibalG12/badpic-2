@@ -84,7 +84,7 @@ a{
 
 .navbar .categories ul li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -436,10 +436,12 @@ font-family: 'Playfair Display', serif;
   justify-content: center;
   gap: 1rem;
   padding: calc(0.6em - 4px) calc(1.6em - 4px);
+  color: #0082e6;
+  
 }
-#mystory .item .right .external-link svg {
+/* #mystory .item .right .external-link svg {
   width: 25px;
-}
+} */
 
 /* small tablet media query */
 @media only screen and (max-width: 768px) {
@@ -482,7 +484,7 @@ font-family: 'Playfair Display', serif;
 	display:grid;
 	place-items:center;
   background-color: black;
-	font-family: Cosi Azure;
+  font-family: 'Playfair Display', serif;
 
 }
 
@@ -597,7 +599,9 @@ font-family: 'Playfair Display', serif;
 .content .topic{
   font-size: 22px;
   font-weight: 500;
-  color: #c23c24;
+  color: #000000;
+  /* margin-top: -150px; */
+  text-align: center;
 }
 .content form{
   width: 40%;
@@ -788,12 +792,12 @@ font-family: 'Playfair Display', serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 1px;
-  font-family: 'Stoke', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* TEXT
 =========================== */
-.text {
+.text  {
   z-index: 1;
 }
 
@@ -820,11 +824,10 @@ font-family: 'Playfair Display', serif;
 /* galley section  */
 #home1{
   width: 120%;
-  /* margin: -400px 0 5px */
 }
 
 #home1 ul{
- margin: -400px 0 0px
+ margin: -40px 0 0px;
 }
 
 /* contact section */
@@ -865,17 +868,35 @@ font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   font-family: 'Stoke', serif;
 }
+
+/* TEXT
+=========================== */
+.text  {
+  z-index: 1;
 }
 
 
-/* Phone view 
+.text h1 .hidetext {
+  position: absolute;
+  padding-left: 30px;
+}
+
+.text p .hidetext {
+ padding-left: 40px;
+}
+}
+
+
+/* big  Phone view 
 =============================================================================== */
-@media (max-width:650){
+@media (max-width:480){
 
   .checkbtn{
     display: block;
     padding-left: 40px !important;
     visibility: visible;
+    color: #000000;
+   
   }
   .categories ul{
     display: flex;
