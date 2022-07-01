@@ -606,12 +606,14 @@ font-family: 'Playfair Display', serif;
 .content form{
   width: 40%;
   margin-right: 30px;
+  font-family: 'Playfair Display', serif;
 }
 .content .input-box{
   height: 50px;
   width: 100%;
   margin: 16px 0;
   position: relative;
+  font-family: 'Playfair Display', serif;
 }
 .content .input-box input{
   position: absolute;
@@ -624,11 +626,13 @@ font-family: 'Playfair Display', serif;
   background: #fae9fb;
   border: 2px solid transparent;
   transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 .content .input-box input:focus,
 .content .input-box input:valid{
   border-color:#c23c24;
   background-color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 .content .input-box label{
   position: absolute;
@@ -639,6 +643,7 @@ font-family: 'Playfair Display', serif;
   pointer-events: none;
   transform: translateY(-50%);
   transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
 
 }
 .content .input-box input:focus ~ label,
@@ -648,11 +653,13 @@ font-family: 'Playfair Display', serif;
   display: 14px;
   color: #c23c24;
   background: #fff;
+  font-family: 'Playfair Display', serif;
 }
 .content .message-box{
   min-height: 100px;
   position: relative;
   /* width: 100%; */
+  font-family: 'Playfair Display', serif;
 }
 .content .message-box textarea{
   position: absolute;
@@ -664,10 +671,12 @@ font-family: 'Playfair Display', serif;
   border-radius: 6px;
   outline: none;
   transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 .content .message-box textarea:focus{
   border-color:#c23c24;
   background-color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 .content .message-box label{
   position: absolute;
@@ -677,6 +686,7 @@ font-family: 'Playfair Display', serif;
   top: 6px;
   pointer-events: none;
   transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 .content .message-box textarea:focus ~ label{
   left: 12px;
@@ -684,6 +694,7 @@ font-family: 'Playfair Display', serif;
   color: #c23c24;
   font-size: 14px;
   background: #fff;
+  font-family: 'Playfair Display', serif;
 }
 .content .input-box input[type="submit"]{
   color: #fff;
@@ -694,6 +705,7 @@ font-family: 'Playfair Display', serif;
   cursor: pointer;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 .content .input-box input[type="submit"]:hover{
   background-color: #c23c24;
@@ -1010,13 +1022,14 @@ font-family: 'Playfair Display', serif;
 }
 /* galley section  */
 #home1{
-  width: 120%;
+  width: 140%;
   /* margin: -400px 0 5px */
 }
 
 #home1 ul{
- margin: -400px 0 0px
+ margin: -100px 0 0px
 }
+
 
 /* contact section */
 .contact{
