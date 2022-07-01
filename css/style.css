@@ -762,7 +762,6 @@ font-family: 'Playfair Display', serif;
   background: url('../images/woman.jpg') no-repeat;
   background-position: center;
   background-size: cover;
-
  }
 
  .img-wrapper01 {
@@ -889,13 +888,13 @@ font-family: 'Playfair Display', serif;
 
 /* big  Phone view 
 =============================================================================== */
-@media (max-width:480){
+@media (min-width: 320px) and (max-width: 576px){
 
   .checkbtn{
     display: block;
-    padding-left: 40px !important;
+    padding-left: 280px ;
     visibility: visible;
-    color: #000000;
+    
    
   }
   .categories ul{
@@ -928,15 +927,16 @@ font-family: 'Playfair Display', serif;
     left: 0;
   }
 
- .wrapper{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url('../images/woman.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
+  .wrapper{
+    width: 140%;
+    height: 100vh;
+    position: relative;
+    background: url('../images/woman.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
 
- }
+ 
 
  .img-wrapper01 {
   display: none;
@@ -979,16 +979,25 @@ font-family: 'Playfair Display', serif;
   width: 1000px;
 }
 
-.text h1 {
-  padding-left: 30px;
+.text h1{
+  font-size: 40px;
+ margin-left: 60px;
 }
 .text h1 .hidetext {
-  position: absolute;
+  position: relative;
+  font-size: 70px;
+  margin-left: 90px;
 }
 
 .text p {
- padding-left: 40px;
+  font-size: 35px;
+  margin-left: 70px;
 }
+
+.text p .hidetext {
+  font-size: 35px;
+  margin-left: 70px;
+ }
  /* Article section */
 
  /* #mystory{
