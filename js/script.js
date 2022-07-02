@@ -31,7 +31,47 @@ for(let i = 0; i < link.length; i++) {
 // }
 // })
 
+var a;
+function show_hide() {
+  if (a==1){
+    document.getElementById('close2').style.display='block';
+    return a=0;
+  
+  }
+  else{
+    document.getElementById('close2').style.display='none';
+    return a=1;
+  
+  }
+}
 
+var b;
+function show() {
+  if (b==1){
+    document.getElementById('close1').style.display='block';
+    return b=0;
+  
+  }
+  else{
+    document.getElementById('close1').style.display='none';
+    return b=1;
+  
+  }
+}
+
+var c;
+function hide() {
+  if (c==1){
+    document.getElementById('close').style.display='block';
+    return c=0;
+  
+  }
+  else{
+    document.getElementById('close').style.display='none';
+    return c=1;
+  
+  }
+}
 
 
 
