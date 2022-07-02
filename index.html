@@ -23,16 +23,17 @@
       <div class="title">Hind$</div>
 
       <div class="categories">
-        <input type="checkbox"  id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
+        <input type="checkbox"  id="check" onclick="document.getElementById('close2').style.display='none'">
+      <label for="check" class="checkbtn" onclick="document.getElementById('close1').style.display='none'">
+        <i class="fas fa-bars" onclick="document.getElementById('close').style.display='none'"
+        ></i>
       </label>
-        <ul>
+        <ul >
           <li><a href="#mystory">My story</a></li>
           <li><a href="#home1">Gallery</a></li>
           <!-- <li><a href="#pricing">Pricing</a></li> -->
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#contact">Socials</a></li>
+          <li><a href="https://instagram.com/__hinds?igshid=YmMyMTA2M2Y=" target="_blank">Socials</a></li>
           
           <!-- <li><a href="#"></a></li> -->
         </ul>
@@ -67,7 +68,7 @@
 
     <!-- TEXT
     =============================== -->
-    <div class="text">
+    <div class="text" id="close">
       <h1>
         <span class="hidetext">Demario Hinds</span>
       </h1>
@@ -79,7 +80,7 @@
 
     <!-- DESC
     =============================== -->
-    <div class="desc">
+    <div class="desc"id="close1" >
       <!-- <ul>
         <li>Volume 01</li>
         <li>Volume 02</li>
@@ -92,7 +93,7 @@
 
     <!-- SCROLLDOWN
     =============================== -->
-    <div class="scrolldown">scroll down</div>
+    <div class="scrolldown" id="close2">scroll down</div>
 
     <!-- BOTTOMNAV
     =============================== -->

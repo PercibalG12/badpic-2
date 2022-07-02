@@ -25,12 +25,14 @@ for(let i = 0; i < link.length; i++) {
 // window.addEventListener("resize",function(){
 // if (window.matchMedia("(min-width:858px)").matches) {
 // checkbtn.addEventListener("click", event =>{
-
+//   console.log("stupid nigga")
 // })
 
 // }
 // })
-// console.log("stupid nigga")
+
+
+
 
 
 
