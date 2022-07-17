@@ -6,14 +6,14 @@ const linkImages = document.querySelectorAll('.hidden-img');
 for(let i = 0; i < link.length; i++) {
   link[i].addEventListener('mousemove', (e) => {
     linkHoverReveal[i].style.opacity = 1;
-    linkHoverReveal[i].style.transform = `translate(-100%, -50% ) rotate(5deg)`;
+    linkHoverReveal[i].style.transform = `transition(-100%, -50% ) rotate(5deg)`;
     linkImages[i].style.transform = 'scale(1, 1)';
     linkHoverReveal[i].style.left = e.clientX + "px";
   })
   
   link[i].addEventListener('mouseleave', (e) => {
     linkHoverReveal[i].style.opacity = 0;
-    linkHoverReveal[i].style.transform = `translate(-50%, -50%) rotate(-5deg)`;
+    linkHoverReveal[i].style.transform = `transition(-50%, -50%) rotate(-5deg)`;
     linkImages[i].style.transform = 'scale(0.8, 0.8)';
   })
 }
@@ -63,11 +63,13 @@ var c;
 function hide() {
   if (c==1){
     document.getElementById('close').style.display='block';
+    // close.style.transition=' 5000';
     return c=0;
   
   }
   else{
     document.getElementById('close').style.display='none';
+    // close.style.transition='5000';
     return c=1;
   
   }
