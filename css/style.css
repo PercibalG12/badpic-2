@@ -640,21 +640,21 @@ font-family: 'Playfair Display', serif;
   font-family: 'Playfair Display', serif;
 }
 .content .input-box label{
-  position: absolute;
-  left: 18px;
-  top: 50%;
+  /* position: absolute; */
+  /* left: 18px;
+  top: 50%; */
   color: #636c72;
   font-size: 15px;
   pointer-events: none;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   transition: all 0.3s ease;
   font-family: 'Playfair Display', serif;
 
 }
 .content .input-box input:focus ~ label,
 .content .input-box input:valid ~ label{
-  top: 0;
-  left: 12px;
+  /* top: 0;
+  left: 12px; */
   display: 14px;
   color: #c23c24;
   background: #fff;
@@ -685,18 +685,18 @@ font-family: 'Playfair Display', serif;
   font-family: 'Playfair Display', serif;
 }
 .content .message-box label{
-  position: absolute;
+  /* position: absolute; */
   font-size: 16px;
   color: #636c72;
-  left: 18px;
-  top: 6px;
+  /* left: 18px;
+  top: 6px; */
   pointer-events: none;
   transition: all 0.3s ease;
   font-family: 'Playfair Display', serif;
 }
 .content .message-box textarea:focus ~ label{
-  left: 12px;
-  top: -10px;
+  /* left: 12px;
+  top: -10px; */
   color: #c23c24;
   font-size: 14px;
   background: #fff;
