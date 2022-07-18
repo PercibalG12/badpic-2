@@ -1055,15 +1055,13 @@ font-family: 'Playfair Display', serif;
  .contact{
   z-index: 12;
   width: 85%;
-  height: 60vh;
-  margin-top: 100px ;
+  height: max-content;
+  /* margin-top: 100px ; */
   padding-bottom: 30px;
 
 } 
 
-.content{
-  height: max-content;
-}
+
 }
 
 
