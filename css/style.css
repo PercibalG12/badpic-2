@@ -854,7 +854,8 @@ font-family: 'Playfair Display', serif;
 .contact{
   z-index: 12;
   width: 85%;
-  height: 90vh;
+  height: max-content;
+  /* change height to 90vh if necessary */
   margin-top: 100px ; 
   
 
@@ -910,7 +911,8 @@ font-family: 'Playfair Display', serif;
  .contact{
   z-index: 12;
   width: 90%;
-  height: 90vh;
+  height: max-content;
+    /* change height to 80vh if necessary */
   margin-top: 100px ;
 
 
@@ -918,7 +920,7 @@ font-family: 'Playfair Display', serif;
 }
 
 
-/* big  Phone view 
+/*  Phone view 
 =============================================================================== */
 @media (min-width: 320px) and (max-width: 576px){
 
@@ -1009,6 +1011,7 @@ font-family: 'Playfair Display', serif;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   width: 1000px;
+
 }
 
 .text h1{
@@ -1037,7 +1040,8 @@ font-family: 'Playfair Display', serif;
  } */
 
 #mystory .all-items{
- padding-left: 100px;
+ padding-left: 160px;
+ /* margin: 0 80px; */
 
 }
 /* galley section  */
