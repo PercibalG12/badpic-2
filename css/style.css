@@ -329,6 +329,8 @@ font-family: 'Playfair Display', serif;
   padding-bottom: 60px;
   margin-bottom: -230px;
   font-family: 'Playfair Display', serif;
+  /* background-color:#5970C6; */
+  /* background-color: #0082e6; */
    /* background:linear-gradient(90deg, rgb(165, 180, 252), rgb(79, 70, 229)); */
 }
 
@@ -436,7 +438,8 @@ font-family: 'Playfair Display', serif;
   justify-content: center;
   gap: 1rem;
   padding: calc(0.6em - 4px) calc(1.6em - 4px);
-  color: #0082e6;
+  /* color: #0082e6; */
+ color: #000000;
   
 }
 /* #mystory .item .right .external-link svg {
